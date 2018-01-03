@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+      <img src="/images/trivia.png" alt="">
+    <h3> San Diego Trivia </h3>
+    <ul>
+      <% for(var key in questions) { %>
+        <li>
+          <a href="/trivia/<%= key %>">
+            <%= questions[key]["question"] %>
+          </a>
+        </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
